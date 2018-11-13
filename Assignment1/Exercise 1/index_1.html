@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style1.css"> <!--Including a CSS file name "style1.css" -->
+
+    <title>Exercise 1</title>
+</head>
+<body>
+    <div>
+        <canvas id="text_a"></canvas> <!--Canvas for text A -->
+        <canvas id="text_b"></canvas> <!--Canvas for text B -->
+        <canvas id="text_c"></canvas> <!--Canvas for text C -->
+        <img id="pic2" src="../Images/pic2.jpg" alt="Picture 2"> <!--Picture with infinitely running animation -->
+        <p id="image_caption">Photo 2</p>
+
+    </div>
+    <div>
+
+        <img id="pic2drag" src="../Images/picture-to-drag.jpg" draggable="true" ondragstart="drag(event)" alt="Picture-to-drag"> <!--Draggable picture-->
+        <canvas id="text_d"></canvas> <!--Canvas for text D-->
+        <p>Picture to drag</p>
+    </div>
+
+    <!--Creating two boxes to drop draggable picture -->
+    <div>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+</body>
+<script type="text/javascript" src="animation1.js"></script> <!--Including a javascript file named "animation1.js" -->
+
+</html>

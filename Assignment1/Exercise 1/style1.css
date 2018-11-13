@@ -1,0 +1,71 @@
+/* Properties set for various canvas with specific id */
+#text_a{
+    background-color: blue;
+    width:175px;
+    height:175px;
+}
+
+#text_b{
+    background-color: yellow;
+    border:1px solid black;
+    width:175px;
+    height:175px;
+    margin-left: 250px;
+}
+
+#text_c{
+    background-color: green;
+    border:1px solid black;
+    width:175px;
+    height:175px;
+    margin-left: 150px;
+}
+#text_d{
+    background-color: lightgray;
+    border:1px solid red;
+    width:350px;
+    height:175px;
+    margin-left: 100px;
+    display: inline-block;
+}
+
+/* Properties set for Picture 2*/
+#pic2{
+    width:175px;
+    height:175px;
+    margin-left: 50px;
+    animation: fun 2s infinite;
+}
+
+/* Properties set for draggable picture*/
+#pic2drag{
+    width:175px;
+    height:175px;
+}
+
+/* Properties set for boxes to drop the draggable picture*/
+#div1{
+    width:175px;
+    height:175px;
+    border:2px solid green;
+    display: inline-block;
+}
+#div2{
+    width:175px;
+    height:175px;
+    border:2px solid black;
+    display: inline-block;
+    margin-left: 250px;
+}
+
+
+#image_caption{
+    margin-left: 1000px;
+}
+
+/* Infinitely running  animation for Picture 2*/
+@keyframes fun{
+    from{opacity: 1;}
+    to{opacity: 0;}
+
+}

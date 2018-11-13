@@ -1,0 +1,94 @@
+/* Properties set for class:column and list included inside it */
+.column{
+    float:left;
+    width:20%;
+    margin: 25px;
+}
+.column ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.column li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    line-height: 40px;
+    height: 40px;
+}
+
+.column a {
+    text-decoration: none;
+    color:black;
+    display: block;
+}
+
+/* Properties set for left column*/
+.left{
+    width:20%;
+    border: 2px solid black;
+}
+
+/* Properties set for right column*/
+.right{
+    width:65%;
+    text-align: justify;
+}
+
+/* Properties set for class:row and list included inside it */
+.row{
+    display:grid;
+
+}
+
+.row ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin-left: 60%;
+    display:inline;
+    float: right;
+
+}
+.row li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    line-height: 40px;
+    height: 40px;
+    float: left;
+}
+
+.row a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+/* Properties set for panoramic picture*/
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:65%;
+    height:auto;
+}
+
+/* Properties set for heading division */
+#heading{
+    text-align: center;
+    border: 1px solid black;
+}
+
+/* Properties set to make page responsive if the browser window is 600px or smaller */
+@media only screen and (max-width: 600px) {
+    .row li {
+        font-size: 70%;
+    }
+    .column li {
+        font-size: 70%;
+    }
+    .right{
+        width: 50%;
+    }
+}
+
